@@ -7,6 +7,7 @@ describe('Persistance filter', () => {
     const expected = [3,4,0,2];
     expect(persistances(input)).toEqual(expected);
   });
-  
-  
+
+
+
 });
