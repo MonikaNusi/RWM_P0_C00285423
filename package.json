@@ -12,6 +12,10 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
+	 "dependencies": {
+    "peer-filter-c00287252": "github:KyleDonovan69/RWM_P0_C00287252#v0.1.1"
+},
+
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.0.0",
 		"@sveltejs/kit": "^2.22.0",
