@@ -1,6 +1,6 @@
 /*perstistance - the number of steps it takes to reduce it to a single digit by repeatedly multplying its digits*/
 
-export function persistance(n: number): number {
+export function persistence(n: number): number {
   let count = 0;
   let value = n;
 // repeat while number has more then one digit
@@ -18,5 +18,5 @@ return count;
 
 //map over a sequence of numbers
 export function persistances(nums: number[]): number[]{
-    return nums.map(persistance);
+    return nums.map(persistence);
 }

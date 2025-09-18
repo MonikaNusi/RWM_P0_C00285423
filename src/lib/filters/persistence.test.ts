@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { persistances } from './persistance';
+import { persistances } from './persistence';
 
 describe('Persistance filter', () => {
   it('the number of steps it takes to reduce it to a single digit by repeatedly multplying its digits', () => {
