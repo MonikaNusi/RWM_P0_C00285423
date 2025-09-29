@@ -1,0 +1,18 @@
+<script lang="ts">
+  export let label: string = 'Click me';
+</script>
+
+<button class="btn" on:click={() => console.log('clicked')}>
+  {label}
+</button>
+
+<style>
+  .btn {
+    padding: 0.5rem 1rem;
+    background: #eeeeee;
+    color: #222222;
+    border-radius: 0.375rem;
+  }
+</style>
+git add src/lib/Button.svelte
+git commit -m "Button base"
