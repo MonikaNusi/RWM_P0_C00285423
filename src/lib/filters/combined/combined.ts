@@ -1,12 +1,18 @@
 // src/lib/combined/combined.ts
 
-import { persistence as myPersistence } from '$lib/filters/persistence';
+import { persistances} from '$lib/filters/persistence';
 
 // Prefer importing from the peer package root (they should export from index.ts)
 
-import { collatzs as peerCollatz } from 'peer-filter-c00287252/src/lib/filters';
+import { collatzs } from 'peer-filter-c00287252/src/lib/filters/collatz';
 
-export function combinedFilter(xs: number[]): number {
-    const afterMine = peerCollatz(xs);
-    return myPersistence(afterMine);
+export type CombinedResult = {
+  collatz: number[];
+  persistence: number[];
+};
+
+export function combinedFilter(xs: number[]): CombinedResult {
+  const collatz = collatzs(xs);
+  const persistence = persistances(collatz); // array of counts
+  return { collatz, persistence };
 }

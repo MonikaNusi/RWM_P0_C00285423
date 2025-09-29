@@ -13,7 +13,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	 "dependencies": {
-    "peer-filter-c00287252": "github:KyleDonovan69/RWM_P0_C00287252#v0.1.1"
+    "peer-filter-c00287252": "github:KyleDonovan69/RWM_P0_C00287252#main"
 },
 
 	"devDependencies": {
